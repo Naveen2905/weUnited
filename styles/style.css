@@ -443,11 +443,6 @@ main .mainSection .pageTabs ul li a div {
   text-decoration: underline;
 }
 
-.newsContainer .search a .world {
-  color: red;
-  font-weight: 700;
-}
-
 .newsContainer .search .selected {
   color: red;
   font-weight: 700;

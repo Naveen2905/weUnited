@@ -70,7 +70,11 @@ newsApp.canada = function () {
 
 
 newsApp.init = function () {
+    
+    // Default Selection 
     worldNewsApp.world();
+    $('.worldSelection').addClass('selected');
+
     // Function to get country and display news;
     $('.search a').on('click',function (e) {
 
@@ -79,7 +83,7 @@ newsApp.init = function () {
         } else {
             worldNewsApp.world();
         }
-        
+
         $('.search a').removeClass('selected')
         $(this).addClass('selected')
     });
