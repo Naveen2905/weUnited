@@ -363,7 +363,7 @@ main .mainSection .pageTabs ul {
 }
 
 main .mainSection .pageTabs ul li {
-  width: calc((100% / 4) - 4%);
+  width: calc((100% / 2) - 4%);
   margin: 2%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -381,8 +381,8 @@ main .mainSection .pageTabs ul li a {
   padding: 5%;
   -webkit-box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.3);
           box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.3);
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 main .mainSection .pageTabs ul li a:hover {
@@ -486,4 +486,11 @@ main .mainSection .pageTabs ul li a div {
 .newsContainer .newsLists li a p {
   font-family: "Karla", sans-serif;
   font-size: calc(1rem + 0.5vw);
+}
+
+.pageHeading {
+  font-family: "Crimson Text", serif;
+  font-size: calc(2rem + 0.5vw);
+  text-align: center;
+  margin: 2% auto;
 }
