@@ -490,7 +490,7 @@ main .mainSection .pageTabs ul li a div {
 
 /* For Mobile Phones */
 @media (max-width: 480px) {
-  .newsLists {
+  .newsContainer .newsLists {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -504,7 +504,7 @@ main .mainSection .pageTabs ul li a div {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .newsLists li {
+  .newsContainer .newsLists li {
     width: calc((100% / 2) - 4%);
     margin: 2%;
   }

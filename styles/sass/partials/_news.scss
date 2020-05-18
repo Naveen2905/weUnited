@@ -60,16 +60,18 @@
 
 /* For Mobile Phones */
 
-@media (max-width:480px) {
-    .newsLists{
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        flex-wrap: wrap;
-            li{
+@media (max-width: 480px) {
+    .newsContainer {
+        .newsLists {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            li {
                 width: calc((100% / 2) - 4%);
                 margin: 2%;
             }
+        }
     }
 }
