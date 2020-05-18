@@ -27,12 +27,35 @@
     <main>
         <section class="wrapper">
             <h2 class="pageHeading">Live Data - Covid 19</h2>
-            
+
+            <!-- Search for Country Data  -->
+            <form action="#" class="countrySearch">
+                <div class="searchContainer">
+                    <label for="countryName">Enter Country </label>
+                    <input type="text" name="nameOfCountry" id="countryName">
+                    <input type="submit" value="Show Results">
+                </div>
+            </form>
+
+            <ul class="resultSection">
+                <li class="coName"></li>
+                <li class="newHeading"></li>
+                <li class="nCon"></li>
+                <li class="nDeaths"></li>
+                <li class="nRecovered"></li>
+                <li class="totalHeading"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+
         </section>
     </main>
 
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
-    <script src="./scripts/news.js"></script>
+    <script src="./scripts/moment.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="./scripts/liveData.js"></script>
 </body>
 
 </html>
