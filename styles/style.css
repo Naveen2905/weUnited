@@ -488,6 +488,28 @@ main .mainSection .pageTabs ul li a div {
   font-size: calc(1rem + 0.5vw);
 }
 
+/* For Mobile Phones */
+@media (max-width: 480px) {
+  .newsLists {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .newsLists li {
+    width: calc((100% / 2) - 4%);
+    margin: 2%;
+  }
+}
+
 .pageHeading {
   font-family: "Crimson Text", serif;
   font-size: calc(2rem + 0.5vw);
