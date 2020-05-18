@@ -56,7 +56,7 @@ liveDataApp.init = function () {
     // Function to get country and display news;
     $('.countrySearch').on('submit', function (e) {
         e.preventDefault();
-        const countryName = $('#countryName').val();
+        const countryName = $('#countryName').val().toLowerCase();
         this.reset();
         liveDataApp.all(countryName);
     });
