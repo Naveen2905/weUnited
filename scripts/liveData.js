@@ -10,13 +10,15 @@ liveDataApp.all = function (countryName) {
         url: liveDataApp.url,
         method: 'GET',
         dataType: 'json',
-    }).then(function (response) {
+    }).then(function (response) {        
+        
         const allCountries = response.Countries;
         //Iterating through Array
+        
         allCountries.forEach(country => {
             const selectedCountry = country.Slug;
-            if (selectedCountry === countryName) {
-                console.log(country);
+            
+            if (countryName === selectedCountry) {
 
                 //Country Name
                 const name = country.Country;
@@ -33,12 +35,16 @@ liveDataApp.all = function (countryName) {
 
                 // Total Cases 
                 $('.totalHeading').html(`Total Cases`)
-
+                const totalCon = country.TotalConfirmed;
+                $('.tCon').html(`Confirmed : ${totalCon}`);
+                const totalDeaths = country.TotalDeaths;
+                $('.tDeaths').html(`Deaths : ${totalDeaths}`);
+                const totalRecovered = country.TotalRecovered;
+                $('.tRecovered').html(`Recovered : ${totalRecovered}`);
 
             }
-            else {
-                swal("Incorrect Entry", "Please search again!", "error");
-            }
+            
+            
         })
     })
 }
