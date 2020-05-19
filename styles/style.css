@@ -511,7 +511,7 @@ main .mainSection .pageTabs ul li a div {
   .newsContainer .newsLists li a {
     color: inherit;
     padding: 5%;
-    display: inline-block;
+    display: block;
   }
   .newsContainer .newsLists li a h3 {
     font-family: "Crimson Text", serif;
