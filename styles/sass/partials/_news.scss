@@ -70,6 +70,22 @@
             li {
                 width: calc((100% / 2) - 4%);
                 margin: 2%;
+                a {
+                    color: inherit;
+                    padding: 5%;
+                    display: inline-block;
+                    h3 {
+                        font-family: "Crimson Text", serif;
+                        font-size: calc(1.2rem + 00.5vw);
+                    }
+                    img {
+                        margin: 2% auto;
+                    }
+                    p {
+                        font-family: "Karla", sans-serif;
+                        font-size: calc(1rem + 0.5vw);
+                    }
+                }
             }
         }
     }
