@@ -1,72 +1,104 @@
 .pageHeading {
-    font-family: "Crimson Text", serif;
-    font-size: calc(2rem + 0.5vw);
-    text-align: center;
+  font-family: "Crimson Text", serif;
+  font-size: calc(2rem + 0.5vw);
+  text-align: center;
 }
 
 .searchContainer {
-    margin: 2% auto;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    label {
-        font-family: "Crimson Text", serif;
-        font-size: calc(1.5rem + 0.5vw);
-        color: #5e548e;
-        display: block;
-        margin: 1%;
+  margin: 2% auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  label {
+    font-family: "Crimson Text", serif;
+    font-size: calc(1.5rem + 0.5vw);
+    color: #5e548e;
+    display: block;
+    margin: 1%;
+  }
+  input[type="text"] {
+    font-family: "Karla", sans-serif;
+    font-size: calc(1.2rem + 0.5vw);
+    border: none;
+    color: #5e548e;
+    background: #e2eef3;
+    border-bottom: 1px solid #9f86c0;
+    padding: 0.5% 1%;
+    display: inline-block;
+    margin: 1%;
+  }
+  input[type="submit"] {
+    border: none;
+    background: #9f86c0;
+    border-radius: 50px;
+    padding: 1% 2%;
+    font-size: calc(1.2rem + 0.5vw);
+    font-family: "Crimson Text", serif;
+    cursor: pointer;
+    display: inline-block;
+    margin: 1%;
+    transition: all 0.3s ease-in-out;
+    &:hover,
+    &:focus {
+      background: #be95c4;
     }
-    input[type="text"] {
-        font-family: "Karla", sans-serif;
-        font-size: calc(1.2rem + 0.5vw);
-        border: none;
-        color: #5e548e;
-        background: #e2eef3;
-        border-bottom: 1px solid #9f86c0;
-        padding: 0.5% 1%;
-        display: inline-block;
-        margin: 1%;
-    }
-    input[type="submit"] {
-        border: none;
-        background: #9f86c0;
-        border-radius: 50px;
-        padding: 1% 2%;
-        font-size: calc(1.2rem + 0.5vw);
-        font-family: "Crimson Text", serif;
-        cursor: pointer;
-        display: inline-block;
-        margin: 1%;
-        transition: all 0.3s ease-in-out;
-        &:hover, &:focus{
-            background: #BE95C4;
-        }
-    }
+  }
 }
 
-.resultSection{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    .coName{
-        font-family: "Crimson Text", serif;
-        font-size: calc(1.5rem + 0.5vw);
-        font-weight: 700;
-        color: #5E548E;
+.resultSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .coName {
+    font-family: "Crimson Text", serif;
+    font-size: calc(1.5rem + 0.5vw);
+    font-weight: 700;
+    color: #5e548e;
+  }
+  .newHeading,
+  .totalHeading {
+    font-family: "Crimson Text", serif;
+    font-size: calc(1.5rem + 0.5vw);
+    font-weight: 700;
+    color: #5e548e;
+    text-transform: capitalize;
+    margin-top: 3%;
+  }
+  li {
+    font-family: "Karla", sans-serif;
+    font-size: calc(1.5rem + 0.5vw);
+    color: #5e548e;
+  }
+}
+
+.states {
+  margin: 2% auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: left;
+  border: 1px #5e548e solid;
+  h3 {
+    font-family: "Crimson Text", serif;
+    font-size: calc(1.2rem + 0.5vw);
+    font-weight: 700;
+    color: #5e548e;
+    text-align: center;
+  }
+  .loading {
+    width: 5%;
+    margin: 0 auto;
+  }
+  .stateLinks {
+    font-family: "Karla", sans-serif;
+    font-size: calc(1rem + 0.5vw);
+    color: #5e548e;
+    margin: 1% auto;
+    text-decoration: underline;
+    a {
+      color: inherit;
     }
-    .newHeading, .totalHeading{
-        font-family: "Crimson Text", serif;
-        font-size: calc(1.5rem + 0.5vw);
-        font-weight: 700;
-        color: #5E548E;
-        text-transform: capitalize;
-        margin-top: 3%;
-    }
-    li{
-        font-family: 'Karla', sans-serif;
-        font-size: calc(1.5rem + 0.5vw);
-        color: #5E548E;
-    }
+  }
 }

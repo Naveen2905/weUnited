@@ -583,7 +583,7 @@ main .mainSection .pageTabs ul li a div {
 }
 
 .searchContainer input[type="submit"]:hover, .searchContainer input[type="submit"]:focus {
-  background: #BE95C4;
+  background: #be95c4;
 }
 
 .resultSection {
@@ -603,20 +603,63 @@ main .mainSection .pageTabs ul li a div {
   font-family: "Crimson Text", serif;
   font-size: calc(1.5rem + 0.5vw);
   font-weight: 700;
-  color: #5E548E;
+  color: #5e548e;
 }
 
-.resultSection .newHeading, .resultSection .totalHeading {
+.resultSection .newHeading,
+.resultSection .totalHeading {
   font-family: "Crimson Text", serif;
   font-size: calc(1.5rem + 0.5vw);
   font-weight: 700;
-  color: #5E548E;
+  color: #5e548e;
   text-transform: capitalize;
   margin-top: 3%;
 }
 
 .resultSection li {
-  font-family: 'Karla', sans-serif;
+  font-family: "Karla", sans-serif;
   font-size: calc(1.5rem + 0.5vw);
-  color: #5E548E;
+  color: #5e548e;
+}
+
+.states {
+  margin: 2% auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  border: 1px #5e548e solid;
+}
+
+.states h3 {
+  font-family: "Crimson Text", serif;
+  font-size: calc(1.2rem + 0.5vw);
+  font-weight: 700;
+  color: #5e548e;
+  text-align: center;
+}
+
+.states .loading {
+  width: 5%;
+  margin: 0 auto;
+}
+
+.states .stateLinks {
+  font-family: "Karla", sans-serif;
+  font-size: calc(1rem + 0.5vw);
+  color: #5e548e;
+  margin: 1% auto;
+  text-decoration: underline;
+}
+
+.states .stateLinks a {
+  color: inherit;
 }
