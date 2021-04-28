@@ -108,3 +108,12 @@ h3 {
     }
   }
 }
+
+@media (max-width: 480px) {
+  .states {
+    .stateLinks {
+      margin: 5% 0;
+      width: calc((100% / 2));
+    }
+  }
+}

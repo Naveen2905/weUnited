@@ -12,6 +12,13 @@ const newsApp = {
     country: 'ca',
 };
 
+const indiaNewsApp = {
+    key: 'dbd2da25f5f84f779e6ee7f7c49c5f7d',
+    query: 'covid-19',
+    category: 'health',
+    country: 'in',
+};
+
 //World News---------------------------------
 worldNewsApp.world = function () {
     $('ul.newsLists').empty(); // empty the ul before fetching and adding new data
@@ -68,19 +75,51 @@ newsApp.canada = function () {
     })
 }
 
+//India news ----------------------------------
+indiaNewsApp.india = function () {
+    $('ul.newsLists').empty(); // empty the ul before fetching and adding new data
+    $.ajax({
+        url: `https://newsapi.org/v2/top-headlines`,
+        method: 'GET',
+        dataType: 'json',
+        data: {
+            apiKey: indiaNewsApp.key,
+            q: indiaNewsApp.query,
+            category: indiaNewsApp.category,
+            country: indiaNewsApp.country,
+        }
+    }).then(function (result) {
+        // Iterrating through array
+        result.articles.forEach(function (eachNews) {
+            const htmlToAppend = `<li>
+                                    <a href=${eachNews.url} target="_blank">
+                                    <h3>${eachNews.title}</h3>
+                                    <img src=${eachNews.urlToImage} alt="${eachNews.title}">
+                                    <p>${eachNews.description}</p>
+                                    </a>
+                                </li>`
+            $('ul.newsLists').append(htmlToAppend);
+        })
+
+    })
+}
+
 
 newsApp.init = function () {
-    
+
     // Default Selection 
     worldNewsApp.world();
     $('.worldSelection').addClass('selected');
 
     // Function to get country and display news;
-    $('.search a').on('click',function (e) {
+    $('.search a').on('click', function (e) {
 
         if (e.target.name === 'ca') {
             newsApp.canada();
-        } else {
+        } else if (e.target.name === 'in') {
+            indiaNewsApp.india();
+        }
+        else {
             worldNewsApp.world();
         }
 
