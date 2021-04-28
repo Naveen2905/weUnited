@@ -112,10 +112,18 @@ $(function () {
                     .then(function (data) {
                         $(".loading").hide();
                         const allStates = data.state_wise;
-                        console.log(allStates);
+                        // const stateArray = []
+                        // stateArray.push(allStates)
+
+                        // stateArray.forEach(function (eachData) {
+                        //     console.log(eachData);
+                        // })
                         for (const property in allStates) {
                             const stateName = property
                             const stateData = allStates[property]
+                            if (stateName === 'State Unassigned') {
+                                return false
+                            }
                             $('.states').append(`<li class='stateLinks'><a href="#">${stateName}</a></li>`)
 
                             $('.stateLinks a').on('click', function () {
@@ -129,6 +137,8 @@ $(function () {
                                 }
                             })
                         }
+
+
                     })
 
                     .catch(err => {

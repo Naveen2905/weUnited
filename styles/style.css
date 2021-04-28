@@ -622,29 +622,30 @@ main .mainSection .pageTabs ul li a div {
   color: #5e548e;
 }
 
+h3 {
+  font-family: "Crimson Text", serif;
+  font-size: calc(1.2rem + 0.5vw);
+  font-weight: 700;
+  color: #5e548e;
+  text-align: center;
+  margin-top: 5%;
+}
+
 .states {
   margin: 2% auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-align: left;
       -ms-flex-align: left;
           align-items: left;
   border: 1px #5e548e solid;
-}
-
-.states h3 {
-  font-family: "Crimson Text", serif;
-  font-size: calc(1.2rem + 0.5vw);
-  font-weight: 700;
-  color: #5e548e;
-  text-align: center;
 }
 
 .states .loading {
@@ -656,12 +657,13 @@ main .mainSection .pageTabs ul li a div {
   font-family: "Karla", sans-serif;
   font-size: calc(1rem + 0.5vw);
   color: #5e548e;
-  margin: 5% 0;
+  margin: 2% 0;
   text-decoration: underline;
   text-align: center;
+  width: calc((100% / 4));
 }
 
 .states .stateLinks a {
   color: inherit;
-  padding: 5%;
+  padding: 2%;
 }
