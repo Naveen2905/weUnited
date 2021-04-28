@@ -120,7 +120,12 @@ $(function () {
 
                             $('.stateLinks a').on('click', function () {
                                 if (this.text === stateName) {
-                                    console.log(stateData);
+                                    const currentCityData = stateData;
+                                    const nCases = currentCityData.deltaconfirmed;
+                                    const nDeaths = currentCityData.deltadeaths;
+                                    const nRecovered = currentCityData.deltarecovered
+                                    const lastUpdated = currentCityData.lastupdatedtime
+                                    swal(stateName + " Data", 'New Cases: ' + nCases + '\n' + 'New Deaths: ' + nDeaths + '\n' + 'New Recovered: ' + nRecovered + '\n' + '\n' + 'Last Updated data on ' + lastUpdated);
                                 }
                             })
                         }

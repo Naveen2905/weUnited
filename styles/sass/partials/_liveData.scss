@@ -95,10 +95,12 @@
     font-family: "Karla", sans-serif;
     font-size: calc(1rem + 0.5vw);
     color: #5e548e;
-    margin: 1% auto;
+    margin: 5% 0;
     text-decoration: underline;
+    text-align: center;
     a {
       color: inherit;
+      padding: 5%;
     }
   }
 }
